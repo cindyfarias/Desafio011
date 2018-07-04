@@ -64,14 +64,26 @@
       </fieldset>
     </form>
       <script>
+        //1º ejercicio
         $("h1").css("color", "red");
 
+        //2º ejercicio  
         $(".section-1").css("background-color", "yellow");
 
+        // 3º ejercicio 
         contador = $(".counter").text();
         contador = parseInt (contador);
         console.log (contador + 10);
         $(".counter").text(contador + 10);
+
+        //4º ejercicio
+        $("#row-3").on("click", function(){
+          $("#row-3").css({
+              "background-color": "#ccc",
+              "transition": "1s",
+            });
+          });
+
 
       </script>
   </body>
