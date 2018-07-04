@@ -25,8 +25,23 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
   <head>
     <meta charset="utf-8">
     <title></title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   </head>
   <body>
 
+  	<img id="logo" src="img/logo.png" alt="">
+
+  	<script>
+		$(document).ready(function(){
+		   $(document).bind("contextmenu",function(e){
+		      return false;
+		   });
+      
+  		$("#logo").mousedown(function(){
+  			alert("No se pueden descargar las imagenes sin el consentimiento del autor.");
+
+  		});
+		});
+  	</script>
   </body>
 </html>
